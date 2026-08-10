@@ -1,6 +1,8 @@
+body{background-color: #141414;}
 .home img {
   object-fit: contain;
   box-sizing: border-box;
+   
 }
 .et_en {
   position: relative;

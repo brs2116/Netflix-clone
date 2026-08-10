@@ -4,6 +4,7 @@ import Navbar from '../../Components/Header/Navbar'
 import et_en from "../../assets/Image/ET-en.jpg"
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
 import InfoIcon from "@mui/icons-material/Info";
+import Footer from '../../Components/Footer/Footer';
 function Home() {
   return (
     <div className='home'>
@@ -16,10 +17,12 @@ function Home() {
     </p>
     <div className="et-btns"><button className='btn'> <SmartDisplayIcon />Play</button>
     <button className='btn dark-btn'> <InfoIcon/> more Info</button></div>
+
+
    </div>
    </div>
   
-
+<Footer/>
 </div>
   );
 }
