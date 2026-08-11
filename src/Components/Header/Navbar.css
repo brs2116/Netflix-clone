@@ -62,3 +62,6 @@ font-size: 13px;
 .navbar-right .profile:hover + li + .dropdown {
   display: block;
 }
+.nav-dark{
+   background: #141414; ; 
+}

@@ -55,3 +55,6 @@ cursor: pointer;
 .et-btns .dark-btn:hover{
   background: #6d6d6e66;
 }
+.more-card{
+  padding-left: 6%;
+}

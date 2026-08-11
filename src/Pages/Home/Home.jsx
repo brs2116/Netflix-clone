@@ -5,25 +5,42 @@ import et_en from "../../assets/Image/ET-en.jpg"
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
 import InfoIcon from "@mui/icons-material/Info";
 import Footer from '../../Components/Footer/Footer';
+import TitleCard from '../../Components/TitleCard/TitleCard';
 function Home() {
   return (
-    <div className='home'>
-   <Navbar/>
-   <div className='et_en'>
-   <img src={et_en} alt="" className='banner-img' />
-    <div className='et-caption'> 
-    <p>
-      Discover his ties to a secret ancient order, a young man living in modern istanbul embarks on a quest to save the city from an immortal enemy.
-    </p>
-    <div className="et-btns"><button className='btn'> <SmartDisplayIcon />Play</button>
-    <button className='btn dark-btn'> <InfoIcon/> more Info</button></div>
+    <div className="home">
+      <Navbar />
+      <div className="et_en">
+        <img src={et_en} alt="" className="banner-img" />
+        <div className="et-caption">
+          <p>
+            Discover his ties to a secret ancient order, a young man living in
+            modern istanbul embarks on a quest to save the city from an immortal
+            enemy.
+          </p>
+          <div className="et-btns">
+            <button className="btn">
+              {" "}
+              <SmartDisplayIcon />
+              Play
+            </button>
+            <button className="btn dark-btn">
+              {" "}
+              <InfoIcon /> more Info
+            </button>
+          </div>
 
-
-   </div>
-   </div>
-  
-<Footer/>
-</div>
+          {/* <TitleCard /> */}
+        </div>
+      </div>
+      <div className="more-card">
+        <TitleCard title={"Blockbuster movie"} catagory={"now_playing"} />
+        <TitleCard title={"Only on Netflix"} catagory={"popular"} />
+        <TitleCard title={"Upcoming"} catagory={"upcoming"} />
+        <TitleCard title={"Top pics For You"} catagory={"top_rated"} />
+      </div>
+      <Footer />
+    </div>
   );
 }
 
