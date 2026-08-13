@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./TitleCard.css";
 import { Link } from 'react-router-dom';
+
 function TitleCard({title,catagory}) {
 
 
