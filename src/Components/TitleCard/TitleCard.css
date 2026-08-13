@@ -33,3 +33,20 @@ right: 10px;
 text-decoration: none;
 color:#fff;
 }
+@media (max-width:800px){
+.titl-card{
+    margin: 20px;
+    margin-bottom: 0;
+}
+.titl-card h2{
+    font-size: 20px;
+}
+.card-list img{
+    width: 100px;
+    
+}
+.card-list p{
+    
+font-size:8px ;
+}
+}

@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { logout } from "../../firebase";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -61,7 +62,14 @@ export default function Navbar() {
           </li>
 
           <li className="dropdown">
-            <p>Sign out of Netflix</p>
+            <p
+              onClick={() => {
+                console.log("CLICKED");
+                logout();
+              }}
+            >
+              Sign out of Netflix
+            </p>
           </li>
         </ul>
       </div>

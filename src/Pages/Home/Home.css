@@ -1,8 +1,9 @@
-body{background-color: #141414;}
+body {
+  background-color: #141414;
+}
 .home img {
   object-fit: contain;
   box-sizing: border-box;
-   
 }
 .et_en {
   position: relative;
@@ -12,49 +13,74 @@ body{background-color: #141414;}
   mask-image: linear-gradient(to right, transparent, black 75%);
   -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
-.et-caption{
+.et-caption {
   position: absolute;
   width: 100%;
   padding-left: 6%;
   bottom: 0;
 }
-.et-caption p{
+.et-caption p {
   max-width: 700px;
   font-size: 17px;
   margin-bottom: 20px;
   color: #eff7f7;
 }
-.et-btns{
+.et-btns {
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
 }
-.et-btns .btn{
-
-border: 0;
-outline: 0;
-padding: 8px 20px;
-display: inline-flex;
-align-items: center;
-gap: 10px;
-font-size: 15px;
-font-weight: 600;
-background: white;
-border-radius: 4px;
-cursor: pointer;
-
-
+.et-btns .btn {
+  border: 0;
+  outline: 0;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.et-btns .dark-btn{
+.et-btns .dark-btn {
   color: #fff;
   background: #6d6d6eb3;
 }
-.et-btns .btn:hover{
+.et-btns .btn:hover {
   background: #ffffffbf;
 }
-.et-btns .dark-btn:hover{
+.et-btns .dark-btn:hover {
   background: #6d6d6e66;
 }
-.more-card{
+.more-card {
   padding-left: 6%;
+}
+@media (max-width: 1024px) {
+  .et-caption p {
+    display: none;
+  }
+  .et-btns {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .et-caption {
+    padding-left: 4px;
+  }
+  .et-caption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .more-card {
+    padding-left: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 12px;
+
+  }
 }
